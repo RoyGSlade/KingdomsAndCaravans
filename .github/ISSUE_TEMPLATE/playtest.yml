@@ -1,0 +1,37 @@
+name: Playtest feedback
+description: Share an optional report from the Kingdoms & Caravans 0.2.1 friend playtest.
+title: "[Playtest] "
+labels: [playtest]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying this early, unfinished build. Please avoid posting personal information.
+  - type: textarea
+    id: first-wave
+    attributes:
+      label: What happened through the first wave?
+      description: What did you build, assign, or defend, and what happened?
+    validations:
+      required: false
+  - type: textarea
+    id: strategy
+    attributes:
+      label: Strategy confusion
+      description: Was any choice, shortage, worker job, or next step unclear?
+    validations:
+      required: false
+  - type: textarea
+    id: bug
+    attributes:
+      label: Bug report
+      description: What did you expect, and what actually happened? Include steps if you can.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Build version
+      placeholder: 0.2.1
+    validations:
+      required: false
