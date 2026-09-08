@@ -1,4 +1,4 @@
-# Kingdoms & Caravans 0.3.1 — Compatibility installer
+# Kingdoms & Caravans 0.3.2 — Compatibility installer
 
 Version 0.2.1 can now upgrade through its existing menu. The previous 0.3.0 download exceeded that client's limits; this release supplies a small first-stage installer that downloads and verifies the full game.
 
@@ -16,6 +16,8 @@ Extract `KingdomsAndCaravans-windows.zip`, run the executable and choose **Insta
 
 ## Checks
 
-The original published 0.2.1 updater code accepted, verified and installed the small candidate package. Twelve installer checks passed, covering URL/save-format validation, missing and corrupted cached games, cancellation cleanup and preservation of saves and other version activations. The full build checks passed, including the paid economy playthrough. The full Windows executable loaded the old save and ran natively.
+The original published 0.2.1 updater code accepted, verified and installed the small candidate package. Fifteen installer checks passed, covering URL/save-format validation, missing and corrupted cached games, cancellation cleanup and preservation of saves and other version activations. The full build checks passed, including the paid economy playthrough. The full Windows executable loaded the old save and ran natively.
 
 Gameplay is the 0.3.0 construction-and-defense playtest. This remains an early, unsigned Windows x64 preview; broader hardware testing is still needed. Version 0.1 saves require their old build.
+
+The final installer also restores shortcut forwarding after a successful retry and recognizes verified recovery folders after a damaged installation. It does not overwrite the damaged copy or another version activation.
