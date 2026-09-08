@@ -1,19 +1,21 @@
-# Kingdoms & Caravans 0.3.0
+# Kingdoms & Caravans 0.3.1
 
 A very early Windows playtest of **The Growing City**: build a settlement, keep its supply chains working, and defend it through two raids.
 
-[Download for Windows x64](https://github.com/RoyGSlade/KingdomsAndCaravans/releases/download/v0.3.0/KingdomsAndCaravans-windows.zip) · [Showcase](https://donavencrenshaw.com/kingdoms-caravans/) · [Release notes](RELEASE-NOTES.md)
+[Download for Windows x64](https://github.com/RoyGSlade/KingdomsAndCaravans/releases/download/v0.3.1/KingdomsAndCaravans-windows.zip) · [Showcase](https://donavencrenshaw.com/kingdoms-caravans/) · [Release notes](RELEASE-NOTES.md)
 
 This is an unfinished, unsigned prototype. Balance, presentation and performance are still being tested. Caravans and multiplayer are not included.
 
 ## Play
 
-1. Download and extract the entire ZIP.
-2. Run `KingdomsAndCaravans.exe` and choose **Begin your kingdom**.
-3. Follow the guided opening to establish storage, logging, plank production and food.
-4. Build housing, expand your economy and recruit defenders while keeping enough workers.
+1. Download and extract the small installer ZIP (38.1 MB).
+2. Run `KingdomsAndCaravans.exe` and choose **Install and play**. It downloads and verifies the full game (164.9 MB).
+3. Choose **Begin your kingdom**, or load your existing kingdom.
+4. After installation, the same executable works offline.
 
-Godot, Blender, Python and an internet connection are not needed to play. The included `READ-ME.txt` contains controls and the full playtest guide. Godot notices are in `licenses/`. Windows may warn about the unsigned executable; the release includes a ZIP checksum for verification.
+For an offline installation or to copy the full game to another PC, use the [full Windows ZIP](https://github.com/RoyGSlade/KingdomsAndCaravans/releases/download/v0.3.1/KingdomsAndCaravans-full-windows.zip). Extract it and run the game directly.
+
+Godot, Blender and Python are not needed. The installer needs an internet connection once; the installed game plays offline. The included `READ-ME.txt` contains controls and the full playtest guide. Godot notices are in `licenses/`. Windows may warn about the unsigned executable; the release includes a ZIP checksum for verification.
 
 ## New in 0.3.0
 
@@ -42,11 +44,11 @@ Godot, Blender, Python and an internet connection are not needed to play. The in
 
 ## Saves and updates
 
-Version 0.3.0 keeps the version-2 save format used by 0.2.x: `kingdom-city-v2.json` and its `.bak` backup. Existing saves retain their map size; start a new kingdom for the full map and guided opening. Version 0.1 saves require the retained old build.
+Version 0.3.1 keeps the version-2 save format used by 0.2.x: `kingdom-city-v2.json` and its `.bak` backup. Existing saves retain their map size; start a new kingdom for the full map and guided opening. Version 0.1 saves require the retained old build.
 
-**Upgrading from 0.2.1:** download and extract 0.3.0 manually once. The older updater has a 100 MB limit and cannot fetch this larger build. Your version-2 save stays in app data.
+**Upgrading from 0.2.1 or 0.3.0:** use the existing in-game updater. The small compatibility installer fits the original updater limits, then downloads and verifies the full game. Your old install and version-2 save stay in place. Cancelling or a failed download leaves the previous shortcut usable.
 
-In 0.3.0, the menu offers **Check for updates**, then **Download update**, then **Restart with update** when ready. The verified download installs beside the old version, and the game saves before switching. GitHub checks and downloads need an internet connection; normal play works offline.
+In the menu choose **Check for updates**, then **Download update**, then **Restart with update** when ready. The verified download installs beside the old version, and the game saves before switching. GitHub checks and downloads need an internet connection; normal play works offline.
 
 Existing shortcuts forward to an activated newer build. To deliberately launch an old build, use `-- --skip-update-forward`.
 

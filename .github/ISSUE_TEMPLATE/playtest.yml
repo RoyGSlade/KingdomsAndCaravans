@@ -1,5 +1,5 @@
 name: Playtest feedback
-description: Share an optional report from the Kingdoms & Caravans 0.3.0 friend playtest.
+description: Share an optional report from the Kingdoms & Caravans 0.3.1 friend playtest.
 title: "[Playtest] "
 labels: [playtest]
 body:
@@ -32,6 +32,6 @@ body:
     id: version
     attributes:
       label: Build version
-      placeholder: 0.3.0
+      placeholder: 0.3.1
     validations:
       required: false
