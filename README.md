@@ -1,48 +1,59 @@
-# Kingdoms & Caravans 0.2.1
+# Kingdoms & Caravans 0.3.0
 
-## Early Windows friend playtest
+A very early Windows playtest of **The Growing City**: build a settlement, keep its supply chains working, and defend it through two raids.
 
-Download the current Windows build:
+[Download for Windows x64](https://github.com/RoyGSlade/KingdomsAndCaravans/releases/download/v0.3.0/KingdomsAndCaravans-windows.zip) · [Showcase](https://donavencrenshaw.com/kingdoms-caravans/) · [Release notes](RELEASE-NOTES.md)
 
-[Download KingdomsAndCaravans-windows.zip](https://github.com/RoyGSlade/KingdomsAndCaravans/releases/download/v0.2.1/KingdomsAndCaravans-windows.zip)
-
-More project context: [Project page](https://donavencrenshaw.com/kingdoms-caravans/)
-
-This is an early, unfinished, unsigned Windows x64 prototype. Expect rough edges, balance changes, missing polish, and bugs. The download is shared for friendly playtesting, not as a finished commercial release.
+This is an unfinished, unsigned prototype. Balance, presentation and performance are still being tested. Caravans and multiplayer are not included.
 
 ## Play
 
-1. Extract the entire ZIP into a folder.
-2. Run `KingdomsAndCaravans.exe`.
-3. If Windows shows an unsigned-app warning, review it carefully before choosing whether to continue.
+1. Download and extract the entire ZIP.
+2. Run `KingdomsAndCaravans.exe` and choose **Begin your kingdom**.
+3. Follow the guided opening to establish storage, logging, plank production and food.
+4. Build housing, expand your economy and recruit defenders while keeping enough workers.
 
-Godot, Blender, Python, and an internet connection are not needed to play.
+Godot, Blender, Python and an internet connection are not needed to play. The included `READ-ME.txt` contains controls and the full playtest guide. Godot notices are in `licenses/`. Windows may warn about the unsigned executable; the release includes a ZIP checksum for verification.
 
-## Your first city
+## New in 0.3.0
 
-- Place a farm near the granary. Available citizens become teamsters and carry reserved planks to the site before construction.
-- Place a woodcutter near trees and a sawmill between it and the storehouse. Logs move to the sawmill, become planks, and then move to storage.
-- Keep a farm staffed. Everyone eats, including soldiers and people in training.
-- Build a house and keep a food reserve to attract civilians.
-- Build a barracks and recruit carefully so the city still has workers.
-- Defend the castle. Six raiders arrive from the north at 3:30, then twelve from the west at 7:30. Losing the castle ends the match.
+- Expanded food chains, diet and happiness, restaurants, equipment production and armored troops.
+- A larger map with finite trees and mineral deposits. Gatherers search the nearest reachable resources without a maximum distance; long walks reduce output.
+- Walls, gates, stairs and garrisons with material costs. Archers reach elevated posts through connected stairs and decks and fire from walls or garrisons.
+- Worker-built stone roads in 2 × 2 sections. The movement bonus begins when construction finishes.
+- Compact construction icons, a separate Defenses category, keyboard selection and building descriptions with costs.
+- Freeze/Play for inspection, with one construction allowed per freeze. Green circles show troop destinations.
+- Continue Building after defeating both invasions.
 
 ## Controls
 
-WASD pans the camera. Q/E rotates it. R resets the camera. The mouse wheel zooms. Left click selects; left drag selects soldiers. Right click moves selected soldiers or attacks an enemy. H holds position. Esc cancels placement or pauses. F5 saves. F9 opens load confirmation. Click the minimap to move the camera.
+| Input | Action |
+| --- | --- |
+| WASD / Q, E / mouse wheel | Pan / rotate / zoom |
+| R | Reset camera; choose stair orientation while placing stairs |
+| Left click / left drag | Select / box-select soldiers |
+| Right click ground or enemy | Move selected soldiers / attack |
+| Right click completed wall or garrison | Post selected archers; connected stairs required |
+| H | Hold position |
+| Tab / 1–9, 0 | Cycle construction categories / choose a visible slot |
+| Space or Freeze/Play | Stop or resume simulation; one construction per freeze |
+| Esc | Cancel placement or open the pause menu |
+| F5 / F9 / F11 | Save / load confirmation / fullscreen |
 
-## Saves and updating
+## Saves and updates
 
-Version 0.2 uses `kingdom-city-v2.json`, with a `.bak` backup. Version 0.1 saves cannot load in 0.2, but the older build remains playable with its original save format.
+Version 0.3.0 keeps the version-2 save format used by 0.2.x: `kingdom-city-v2.json` and its `.bak` backup. Existing saves retain their map size; start a new kingdom for the full map and guided opening. Version 0.1 saves require the retained old build.
 
-Open the menu and choose **Check for updates**, then **Download update** when a newer version is offered. The update downloads into a separate folder so the existing install and version 0.2 save remain available. Choose **Restart with update** when ready; the current kingdom is saved before switching. The update check and download use GitHub and require an internet connection.
+**Upgrading from 0.2.1:** download and extract 0.3.0 manually once. The older updater has a 100 MB limit and cannot fetch this larger build. Your version-2 save stays in app data.
 
-Your existing shortcut opens an activated newer version automatically. To deliberately run an older build, launch it with `-- --skip-update-forward`.
+In 0.3.0, the menu offers **Check for updates**, then **Download update**, then **Restart with update** when ready. The verified download installs beside the old version, and the game saves before switching. GitHub checks and downloads need an internet connection; normal play works offline.
+
+Existing shortcuts forward to an activated newer build. To deliberately launch an old build, use `-- --skip-update-forward`.
 
 ## Feedback
 
-Optional feedback is welcome through the [playtest issue form](https://github.com/RoyGSlade/KingdomsAndCaravans/issues/new?template=playtest.yml). Useful reports include what you tried, what happened, what you expected, and whether the first wave made you want to continue.
+[Send playtest feedback](https://github.com/RoyGSlade/KingdomsAndCaravans/issues/new?template=playtest.yml). Include your version, what you tried, what happened and what you expected. Reports about confusing shortages, stair access, construction controls and the first raid are especially useful.
 
-![Early Growing City playtest](screenshot.png)
+![Early 0.3.0 Growing City playtest](screenshot.png)
 
-This repository hosts player information and release downloads. It does not publish the game source under an open-source license. Bundled Godot notices are included in the ZIP.
+This repository hosts player information and release downloads. Game source remains private; no open-source license is granted for the game. Bundled Godot notices are included in the ZIP.

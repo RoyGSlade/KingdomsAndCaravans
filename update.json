@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "0.2.1",
-  "url": "https://github.com/RoyGSlade/KingdomsAndCaravans/releases/download/v0.2.1/KingdomsAndCaravans-windows.zip",
-  "sha256": "376b771b256c5203f97fb8ae4c510da76bbbfd5cbe4d396a9febad109301c04c",
-  "bytes": 39610451,
+  "version": "0.3.0",
+  "url": "https://github.com/RoyGSlade/KingdomsAndCaravans/releases/download/v0.3.0/KingdomsAndCaravans-windows.zip",
+  "sha256": "ec7ee72669d443b78d82d5a4bbab877df45296dd66b5faa289d7a4d610e7d1bf",
+  "bytes": 163498497,
   "save_version": 2
 }
