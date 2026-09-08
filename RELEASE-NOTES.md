@@ -21,3 +21,5 @@ The original published 0.2.1 updater code accepted, verified and installed the s
 Gameplay is the 0.3.0 construction-and-defense playtest. This remains an early, unsigned Windows x64 preview; broader hardware testing is still needed. Version 0.1 saves require their old build.
 
 The final installer also restores shortcut forwarding after a successful retry and recognizes verified recovery folders after a damaged installation. It does not overwrite the damaged copy or another version activation.
+
+Live verification completed: the published 0.2.1 updater checked GitHub, downloaded and installed 0.3.2, and launched the full game. Reopening the original 0.2.1 executable forwarded to the updated game. The old save loaded, and the save and backup stayed byte-identical in an isolated test profile. See [upgrade-verification.json](upgrade-verification.json).

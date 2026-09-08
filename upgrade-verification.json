@@ -1,0 +1,19 @@
+{
+  "version": "0.3.2",
+  "tested_from": "published0.2.1 updater and original Windows executable",
+  "profile": "isolated test kingdom, not the player live profile",
+  "installer_bytes": 38063805,
+  "installer_sha256": "b495752f77955198e651fb996edfc401b7822687acfb02c9278e508e993d6434",
+  "full_game_bytes": 164903664,
+  "full_game_sha256": "76a2b59698186c595836d60c21c1793716c93da4a6bd84ba2ec5afb70ea9d0b5",
+  "installer_checks_passed": 15,
+  "live_manifest_check": true,
+  "live_old_client_download_and_install": true,
+  "old_client_restart_launches_full_game": true,
+  "original_executable_forwards_to_updated_game": true,
+  "old_save_loaded": true,
+  "save_and_backup_byte_identical": true,
+  "previous_installation_retained": true,
+  "retry_and_repair_checks": "passed",
+  "hardware_scope": "development Windows laptop only"
+}
